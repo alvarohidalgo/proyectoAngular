@@ -1,0 +1,31 @@
+.container {
+    background-image: url(../../assets/main-fondo.jpg);
+    width: 100%;
+    height: max-content;
+  }
+  
+.container-icono {
+  margin-top: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.glyphicon-shopping-cart {
+  color: grey;
+}
+
+.glyphicon-shopping-cart:hover {
+  color: black;
+}
+
+.numero-circulo {
+  margin-top: 8px;
+  width: 15px;
+  height: 15px;
+  color: white;
+  background-color: red;
+  font-size: xx-small;
+  border: 1px solid red;
+  border-radius: 50%;
+  text-align: center;
+}

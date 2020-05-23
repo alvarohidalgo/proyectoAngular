@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="container-login">
+    <div class="col-lg-4 col-sm-6 well col-sm-offset-3 col-lg-offset-4">
+      <h1>Tienda en Línea</h1>
+      <hr>
+      <h3> <strong>Inicia Sesión</strong></h3>
+      <form (ngSubmit)="login()" #f="ngForm">
+        <div class="form-group">
+          <label for="email-input">Correo electrónico</label>
+          <input type="email" class="form-control" id="email-input" name="email" [(ngModel)]="email" required
+            pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+        </div>
+        <div class="form-group">
+          <label for="password-input">Password</label>
+          <input type="password" class="form-control" id="password-input" name="pwd" [(ngModel)]="pwd" required>
+          <label class="error" *ngIf="!f.valid">Debe ingresar email y password</label>
+        </div>
+        <button type="submit" class="btn btn-success center-block">Ingresar</button>
+      </form>
+    </div>
+  </div>
+</div>

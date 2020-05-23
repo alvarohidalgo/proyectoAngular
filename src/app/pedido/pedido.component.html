@@ -1,0 +1,39 @@
+<div class="contenedor-gral">
+    <div class="container">
+        <div class="container-pedido">
+            <h2>Carrito de Compras</h2>
+            <hr>
+            <div class="contenedor-lista-y-total">
+                <div class="detalle-pedido">
+                    <ul class="lista">
+                        <li *ngFor="let producto of mainService.productosEnCarrito">
+                            <div class="contenedor-datos-producto">
+                                <div class="datos-producto">
+                                    <div class="container-img">
+                                        <img src={{producto.rutaimagen}} alt="">
+                                    </div>
+                                    <div class="datos1">
+                                        <h5>{{producto.producto}}</h5>
+                                        <h5>Unidades: {{producto.qPedido}}</h5>
+                                    </div>
+                                </div>
+                                <div class="subtotal">
+                                    <h4>Subotal: {{producto.qPedido*producto.precio}}</h4>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="total">
+                    <div>
+                        <h2>Total: $ {{totalPedido}}</h2>
+                    </div>
+                    <div>
+                        <button class="btn btn-default" (click)="atras()">Cancelar</button>
+                        <button class="btn btn-default" (click)="pagar()">Pagar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

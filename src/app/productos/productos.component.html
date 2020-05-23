@@ -1,0 +1,39 @@
+<!-- <app-barranavegacion></app-barranavegacion> -->
+<div class="container">
+    <div class="container-productos">
+        <div class="tit-general">
+            <div class="tit-productos">
+                <h1>Catálogo de Productos</h1>
+                <hr>
+            </div>
+            <div class="buscar">
+                <p>¿Qué estás buscando?</p>
+                <input #datoAbuscar type="text" [ngModel]="caracterDigitado" (ngModelChange)="filtraProductos($event)" (keydown.esc)="pulsoEsc()">
+                <hr>
+            </div>
+        </div>
+        <ul class="lista">
+            <li *ngFor="let producto of mainService.relacionProductosFiltrados"><img src={{producto.rutaimagen}} alt="">
+                <div class="subtit">
+                    <h3>{{producto.producto}}</h3>
+                    <h4>Precio: {{producto.precio}}</h4>
+                    <h4>Unidades Disponibles: {{producto.existencias}}</h4>
+                    <br>
+                    <div class="btn-toolbar" role="toolbar">
+                        <div class="btn-group">
+                            <button class="btn btn-primary center-block" (click)="verMas(producto)">Ver más</button>
+                        </div>
+                        <div class="btn-group boton2">
+                            <button class="btn btn-warning center-block" 
+                            (click)="adicionarEnPedido(producto)">Añadir</button>
+                        </div>
+                        <div class="btn-group">
+                            <input class="boton3" [(ngModel)]="producto.qPedido"  min=0 max={{producto.existencias}} 
+                            type="number" id="quantity" name="cantidad">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tiendaOK"
+    }
+  },
+  "defaultProject": "tiendaOK",
+  "cli": {
+    "analytics": false
+  }
 }

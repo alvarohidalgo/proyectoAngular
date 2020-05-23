@@ -1,0 +1,74 @@
+.container {
+    background-image: url(../../assets/main-fondo.jpg);
+    width: 100%;
+    height: max-content;
+  }
+    
+.container-productos { 
+  width: 90%;
+  margin-left:70px;
+}
+
+.tit-general {
+  background-color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0px;
+  height: 100px;
+}
+
+.tit-productos {
+  width: 80%;
+}
+
+.buscar {
+  margin-top: 3px;
+  width: 20%;
+}
+
+.lista {
+  margin-top: 0px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0em;
+}
+    
+.lista li {
+  padding: 15px;
+  margin-top: 0px;
+  border: 1px solid lightgrey;
+  display: inline-block;
+  width: 25%;
+  height: 550px;
+  background-color: whitesmoke;
+}
+
+img {
+  width: 100%;
+  height: 60%;
+}
+  
+.subtit {
+  margin-left: 20px;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+.barra-superior {
+  background-color: powderblue;
+}
+  
+.navbar-brand {
+  color: teal;
+}
+  
+.boton2 {
+  margin-left: 50px;
+}
+
+.boton3 {
+  width: 65px;
+  height: 34px;
+  text-align: center;
+}

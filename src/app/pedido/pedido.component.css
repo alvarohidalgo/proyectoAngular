@@ -1,0 +1,66 @@
+.contenedor-gral {
+  background-image: url(../../assets/main-fondo.jpg);
+  height: 900px;
+ }
+.container {
+  background-color: white;
+  width: 70%;
+  height: max-content;
+ }
+      
+.container-pedido { 
+  width: 100%;
+ }
+
+ .contenedor-datos-producto {
+  border: 1px solid lightgrey;
+  width: 70%;
+ }
+
+.datos-producto {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  /* border: 5px solid yellow; */
+ }
+
+.container-img {
+  /* border: 1px solid lightgrey; */
+  width: 80%;
+ }
+img {
+  width: 100%;
+  height: 100%;
+ }
+
+.lista {
+  list-style: none;
+ }
+ 
+.subtotal {
+  margin-left: 10px;
+ }
+
+.datos1 {
+  margin: 20px;
+}
+    
+.btn-toolbar {
+  margin: 15px;
+}
+
+.contenedor-lista-y-total {
+  /* border: 2px solid cyan; */
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.total {
+  width: 70%;
+  /* border: 2px solid red; */
+}
+
+.detalle-pedido {
+  width: 30%;
+  /* border: 2px solid black; */
+}

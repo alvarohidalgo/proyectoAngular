@@ -1,0 +1,29 @@
+<div class="contenedor-gral">
+    <div class="container">
+        <div class="container-consulta">
+            <div class="nombre-prod">
+                <h2>{{productoAconsultar.producto}}</h2>
+                <hr>
+            </div>
+            <div class="container-img">
+                <img src={{productoAconsultar.rutaimagen}} alt="">
+            </div>
+            <div class="container-precio-stock">
+                <div>
+                    <div class="precio-stock">
+                        <h3>Precio: {{productoAconsultar.precio}}</h3>
+                    </div>
+                    <div class="precio-stock">
+                        <h3>Unidades Disponibles: {{productoAconsultar.existencias}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group">
+                <button class="btn btn-primary center-block" (click)="atras()">Atrás</button>
+            </div>
+        </div>
+
+    </div>
+</div>
