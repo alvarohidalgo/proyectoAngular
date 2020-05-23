@@ -1,0 +1,5 @@
+https://github.com/alvarohidalgo/proyectoAngular
+
+Credenciales para ingresar al aplicativo:
+Usuario: mail@mail.com
+Password: 123456
